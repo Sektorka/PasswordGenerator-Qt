@@ -1,0 +1,38 @@
+// program icon
+    IDI_ICON1	ICON	DISCARDABLE "icons/PWGen.ico"
+
+// program version info  
+    1 VERSIONINFO
+     FILEVERSION 1,0,0,0
+     PRODUCTVERSION 1,0,0,0
+     FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+     FILEFLAGS 0x1L
+#else
+     FILEFLAGS 0x0L
+#endif
+     FILEOS 0x4L
+     FILETYPE 0x2L
+     FILESUBTYPE 0x0L
+    BEGIN
+        BLOCK "StringFileInfo"
+        BEGIN
+            BLOCK "040904e4"
+            BEGIN
+#ifdef STATIC_BUILD
+                VALUE "Comments", "The Password Generator is Stable version (Static build)\0"
+#else
+                VALUE "Comments", "The Password Generator is Stable version (dynamic build)\0"
+#endif
+                VALUE "CompanyName", "Sektor\0"
+                VALUE "FileDescription", "\0"
+                VALUE "FileVersion", "1.0.0\0"
+                VALUE "InternalName", "PasswordGenerator\0"
+                VALUE "LegalCopyright", "Copyright (C) 2012 Sektor\0"
+                VALUE "LegalTrademarks", "\0"
+                VALUE "OriginalFilename", "PasswordGenerator.exe\0"
+                VALUE "ProductName", "Password generator :: by Sektor\0"
+                VALUE "ProductVersion", "1.0.0\0"
+            END
+        END
+    END
